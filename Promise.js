@@ -1,3 +1,5 @@
+(function () {
+
 const pending = 0;
 const fulfilled = 1;
 const chained = 2;
@@ -66,3 +68,7 @@ Promise.race = arr =>
       Promise.resolve(arr[i]).then(resolve);
     }
   });
+
+module.exports = Promise;
+
+})();
